@@ -1,12 +1,16 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
+      <!-- Website logo or title that links back to the homepage -->
       <a class="navbar-brand" href="/">INFR3120</a>
+      <!-- menu button for mobile view -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <!-- Collapsible navigation section -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <!-- Home link — highlighted when the current page title is 'Home' -->
           <li class="nav-item">
             <% if (title=="Home" ) { %>
               <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-lg fa-house"></i>
@@ -15,6 +19,7 @@
                 <a class="nav-link" aria-current="page" href="/home"><i class="fa-solid fa-lg fa-house"></i> Home</a>
                 <% } %>
           </li>
+          <!-- About link — highlighted when the current page title is 'About' -->
           <li class="nav-item">
             <% if (title=="About" ) { %>
               <a class="nav-link active" aria-current="page" href="/about"><i class="fa-solid fa-lg fa-circle-info"></i>
@@ -24,6 +29,7 @@
                   About</a>
                 <% } %>
           </li>
+          <!-- Project link — highlighted when the current page title is 'Project' -->
           <li class="nav-item">
             <% if (title=="Project" ) { %>
               <a class="nav-link active" aria-current="page" href="/project"><i class="fa-solid fa-lg fa-briefcase"></i>
@@ -33,6 +39,7 @@
                   Project</a>
                 <% } %>
           </li>
+          <!-- Contact Me link — highlighted when the current page title is 'Contact Me' -->
           <li class="nav-item">
             <% if (title=="Contact Me" ) { %>
               <a class="nav-link active" aria-current="page" href="/contactme"><i class="fa-solid fa-lg fa-phone"></i>

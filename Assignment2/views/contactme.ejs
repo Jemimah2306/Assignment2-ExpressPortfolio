@@ -1,0 +1,59 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/main_nav.ejs') %>
+
+<!-- Contact Me Section -->
+<div id="wrapper" class="container">
+    <h1>Contact Me</h1>
+    <article class="contact-page">
+        <!-- Left column with contact info -->
+        <div id="left-column">
+            <section>
+                <h2>Get in Touch</h2>
+                <h3>If you have any inquiries or would like</h3>
+                <h3>to say hi, please use the contact form</h3><br>
+                <p>Email: <a href="mailto:jemimah.adamu@ontariotechu.net">jemimah.adamu@ontariotechu.net</a></p>
+            </section>
+        </div>
+
+        <!-- Right column with contact form -->
+        <div id="right-column">
+            <section>
+                <form action="mailto:jemimah.adamu@ontariotechu.net" method="post" enctype="text/plain">
+                    <!-- Name fields -->
+                    <p>
+                        <label for="Firstname">First Name:</label>
+                        <input type="text" name="Firstname" id="Firstname" placeholder="Enter your first name" required>
+
+                        <label for="Lastname">Last Name:</label>
+                        <input type="text" name="Lastname" id="Lastname" placeholder="Enter your last name" required>
+                    </p>
+
+                    <!-- Email field -->
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                    </p>
+
+                    <!-- Phone field -->
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required>
+                    </p>
+
+                    <!-- Message field -->
+                    <p>
+                        <label for="message">Message:</label><br>
+                        <textarea name="message" id="message" rows="6" cols="40" placeholder="Type your message here" required></textarea>
+                    </p>
+
+                    <!-- Buttons -->
+                    <p>
+                        <input type="submit" value="Send" class="button">
+                        <input type="reset" value="Clear" class="button">
+                    </p>
+                </form>
+            </section>
+        </div>
+    </article>
+</div>
+<%- include('./partials/footer.ejs') %>

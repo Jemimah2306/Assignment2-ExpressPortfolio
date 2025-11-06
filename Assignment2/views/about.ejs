@@ -1,0 +1,36 @@
+<%- include('./partials/header.ejs') %>
+<%- include('./partials/main_nav.ejs') %>
+
+<!-- Wrapper for entire page content -->
+<div id="wrapper">
+    <h1>About Me</h1>
+
+    <!-- Main content area -->
+    <article>
+        <!-- About Me section -->
+        <section id="aboutme">
+            <div class="about-content">
+                <div>
+                    <!-- Introduction text -->
+                    <p>
+                       Hi! I'm Jemimah Adamu. I made a short introduction video
+                       so you can get to know me better. In the video, I share my
+                       passions, goals, and a bit about what I enjoy doing.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Video wrapper -->
+            <div class="video-wrapper">
+                <video controls poster="Asset/images/poster.jpg" width="400">
+                    <!-- Video sources in MP4 and OGV formats -->
+                    <source src="Asset/images/video/introvideo.mp4" type="video/mp4">
+                    <source src="Asset/images/video/introvideo.ogv" type="video/ogg">
+                    <!-- Fallback text if video not supported -->
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+    </article>
+</div>
+<%- include('./partials/footer.ejs') %>
